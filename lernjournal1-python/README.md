@@ -4,7 +4,7 @@
 
 | | Bitte ausfüllen |
 | -------- | ------- |
-| Repository (URL)  https://github.com/abelasdf/mein-flask-projekt.git|
+| Repository (URL)  | https://github.com/abelasdf/mein-flask-projekt.git
 | Kurze Beschreibung der App-Funktion |  |
 | Verwendete Library aus PyPi (Name) | |
 | Verwendete Library aus PyPi (URL) | |
