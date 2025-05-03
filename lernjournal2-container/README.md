@@ -7,7 +7,7 @@
 | | Bitte ausfüllen |
 | -------- | ------- |
 | Image 1 |abelasdf/mini-blog-web:latest  |
-| Image 1 |  |
+| Image 1 |https://hub.docker.com/r/abelasdf/mini-blog  |
 | Image 2 |mysql:8.0  |
 | Image 2 |https://hub.docker.com/_/mysql  |
 | Docker Compose | |
