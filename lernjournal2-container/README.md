@@ -6,20 +6,28 @@
 
 | | Bitte ausfüllen |
 | -------- | ------- |
-| Image 1 | mein-flask-app |
-| Image 1 | docker.io/abelasdf/mein-flask-app |
-| Image 2 | Name/Bezeichnung |
-| Image 2 | URL Docker Hub |
-| ... | ... |
-| Docker Compose | https://github.com/abelasdf/mein-flask-projekt|
+| Image 1 |abelasdf/mini-blog-web:latest  |
+| Image 1 |  |
+| Image 2 |mysql:8.0  |
+| Image 2 |https://hub.docker.com/_/mysql  |
+| Docker Compose | |
 
 ### Dokumentation manuelles Deployment
+Für das manuelle Deployment der Web-Applikation wurden die Images lokal via Dockerfile (Python Flask App) und direkt aus Docker Hub (MySQL 8.0) erstellt. Die App besteht aus einem Webserver (Flask) und einer MySQL-Datenbank.
+<img width="424" alt="Bildschirmfoto 2025-05-03 um 15 33 29" src="https://github.com/user-attachments/assets/3f36f429-fd9f-4698-9812-2296cbe12e07" />
 
-Die Flask-App wurde zunächst ohne Docker gestartet, indem die Abhängigkeiten mit pip install -r requirements.txt installiert wurden. Die App konnte erfolgreich unter http://localhost:5000 im Browser erreicht werden.
+Die MySQL-Datenbank wurde separat mit Umgebungsvariablen gestartet:
+<img width="453" alt="Bildschirmfoto 2025-05-03 um 15 34 14" src="https://github.com/user-attachments/assets/7fcae12b-b854-4152-8a18-64493d646e99" />
+
+Es wurden Ports gemappt und die Anwendung war lokal auf http://localhost:5050 erreichbar.
+
 
 ### Dokumentation Docker-Compose Deployment
+Mit Docker Compose wurde die Web-Applikation effizienter verwaltet. Es wurde eine docker-compose.yml mit zwei Services erstellt: web (Flask) und db (MySQL).
+Start der gesamten Applikation:
+<img width="362" alt="Bildschirmfoto 2025-05-03 um 15 38 09" src="https://github.com/user-attachments/assets/bba3cbde-15e8-497f-8ec2-dc5ba79410e8" />
 
-Das Docker-Image wurde mit docker-compose.yml konfiguriert, und der Container wurde mit den nötigen Umgebungsvariablen gestartet.
+Dies startete automatisch beide Container und ermöglichte die Kommunikation über ein gemeinsames internes Docker-Netzwerk. Das Web-Frontend war anschliessend unter localhost:5050 erreichbar.
 
 ## Deployment ML-App
 
@@ -27,27 +35,23 @@ Das Docker-Image wurde mit docker-compose.yml konfiguriert, und der Container wu
 
 | Gewähltes Beispiel | Bitte ausfüllen |
 | -------- | ------- |
-| onnx-sentiment-analysis | Nein |
-| onnx-image-classification | Nein |
+| onnx-sentiment-analysis |  |
+| onnx-image-classification |  |
 | Repo URL Fork | URL |
 | Docker Hub URL | URL |
 
 ### Dokumentation lokales Deployment
 
-	•	Lokales Deployment der ML-App:
-Die ML-App wurde lokal aus einem Docker-Container ausgeführt. Dafür wurde das Modell über das Docker-Image gestartet, das mit den nötigen Abhängigkeiten und Konfigurationen versehen war.
+
 
 ### Dokumentation Deployment Azure Web App
 
-	•	Deployment auf Azure Web App:
-Um die Anwendung auf Azure Web App zu deployen, wurde das Docker-Image in Azure Container Registry (ACR) hochgeladen. Danach wurde die App über Azure App Service konfiguriert, um das Image bereitzustellen. Weitere Details zur Konfiguration findest du in der Azure-Dokumentation für Container-Deployments.
+
 
 
 ### Dokumentation Deployment ACA
 
-Die Anwendung wurde auf Azure Container Apps (ACA) bereitgestellt, indem das Docker-Image auf ACR hochgeladen wurde. Anschließend wurde die Container-App über die Azure CLI oder das Azure Portal erstellt und konfiguriert, um das Image aus dem ACR zu ziehen und den Container bereitzustellen.
+
 
 ### Dokumentation Deployment ACI
 
-	•	Deployment auf Azure Container Instances (ACI):
-Um die Docker-Anwendung in Azure Container Instances bereitzustellen, wurde das Docker-Image zunächst in das Azure Container Registry (ACR) hochgeladen und dann als Container in ACI gestartet.
