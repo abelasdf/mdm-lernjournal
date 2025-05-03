@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: blog
+      MYSQL_USER: bloguser
+      MYSQL_PASSWORD: blogpass
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  web:
+    build: .
+    ports:
+      - "5050:5000"
+    environment:
+      DB_HOST: db
+      DB_USER: bloguser
+      DB_PASSWORD: blogpass
+      DB_NAME: blog
+    depends_on:
+      - db
+
+volumes:
+  mysql-data:
