@@ -10,7 +10,7 @@
 | Image 1 |https://hub.docker.com/r/abelasdf/mini-blog  |
 | Image 2 |mysql:8.0  |
 | Image 2 |https://hub.docker.com/_/mysql  |
-| Docker Compose | |
+| Docker Compose |https://github.com/abelasdf/lernjournal/blob/main/lernjournal2-container/docker-compose.yml |
 
 ### Dokumentation manuelles Deployment
 Für das manuelle Deployment der Web-Applikation wurden die Images lokal via Dockerfile (Python Flask App) und direkt aus Docker Hub (MySQL 8.0) erstellt. Die App besteht aus einem Webserver (Flask) und einer MySQL-Datenbank.
