@@ -10,7 +10,7 @@ Bitte Anzahl Unterkapitel entsprechend der Gruppengrösse anpassen. Der eigene S
 |-------|-----------------|
 | Review durch (ZHAW-Kürzel) | ghebrabe |
 | Review von (ZHAW-Kürzel) | mooyan01 |
-| Sprache, Kommunikation, roter Faden | Die Präsentation war klar verständlich und logisch aufgebaut. Die Sprecher hat das Thema durchgehend strukturiert und mit einem klaren roten Faden erklärt. |
+| Sprache, Kommunikation, roter Faden | Die Präsentation war klar verständlich und logisch aufgebaut. Der Sprecher hat das Thema durchgehend strukturiert und mit einem klaren roten Faden erklärt. |
 | Nachvollziehbarkeit Inhalt, Demonstration | Die einzelnen Schritte – von der Datenquelle über das Scraping bis hin zur Modellierung – wurden anschaulich und nachvollziehbar präsentiert. Die App war funktional und mehrere Inputs konnten problemlos getestet werden. |
 
 ## Screencast 2
