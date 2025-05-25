@@ -46,10 +46,15 @@ Nach der Verarbeitung zeigt die Web-App die ermittelte Emotion direkt auf der We
 
 ## 📦 Deployment
 
+
+
+![Emotionserkennung – Ergebnisanzeige](images/Bildschirmfoto%202025-05-25%20um%2022.51.44.png)
+
 Die Anwendung wurde lokal containerisiert und mit **Docker** ausgeführt. Die Ausführung erfolgte auf Port `5051` via:
 
 ```bash
 flask run --port=5051
 
-![Emotionserkennung – Ergebnisanzeige](images/Bildschirmfoto%202025-05-25%20um%2022.51.44.png)
+
+
 
