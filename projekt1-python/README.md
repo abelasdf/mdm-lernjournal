@@ -19,8 +19,7 @@ Die Flugdaten wurden automatisiert mithilfe von **Selenium** direkt von der Anku
 - Nur die erste Flugnummer eines Listeneintrags wird als eindeutige ID behandelt
 - Speicherung und Verwaltung in **MongoDB Atlas**
 
-📸 **Screenshot:** Funktionierender Scraping-Vorgang  
-👉 `images/scraping-success.png`
+![Screenshot 1 – Scraping-Ausgabe](images/Bildschirmfoto%202025-05-25%20um%2022.26.44.png)
 
 ---
 
@@ -36,8 +35,7 @@ Das Vorhersagemodell wurde mit einem **Random Forest** trainiert. Als Features d
 
 Trainingsdaten wurden aus der MongoDB-Datenbank geladen und verarbeitet.
 
-📸 **Screenshot:** Modelltraining und Feature-Importances  
-👉 `images/model-training.png`
+![Screenshot 2 – Trainingsvorgang oder Featureübersicht](images/Bildschirmfoto%202025-05-25%20um%2022.28.18.png)
 
 ---
 
@@ -48,8 +46,7 @@ Das Projekt enthält Skripte zur:
 - Modell-Export in `.pkl`
 - Upload des Modells in **Azure Blob Storage**
 
-📸 **Screenshot:** Upload-Skript zu Azure  
-👉 `images/azure-model-upload.png`
+![Screenshot 3 – Modellvorhersage oder UI](images/Bildschirmfoto%202025-05-25%20um%2022.29.59.png)
 
 ---
 
@@ -61,12 +58,6 @@ Die Web-App basiert auf **Flask** und erlaubt:
 - Vorhersage der Verspätung
 - Visualisierung des Ergebnisses in HTML
 
-📸 **Screenshot:** Interaktive Startseite mit Eingabefeld  
-👉 `images/ui-start.png`
-
-📸 **Screenshot:** Vorhersageanzeige mit Live-Wetterdaten  
-👉 `images/ui-result.png`
-
 ---
 
 ##  Deployment
@@ -77,10 +68,5 @@ Die App wurde über **Docker** containerisiert und mit **Azure App Service** ber
 - Deployment erfolgte via Azure CLI (`az webapp up`)
 - Screencast zeigt vollständig funktionierendes Deployment
 
-📸 **Screenshot:** Docker-Build  
-👉 `images/docker-build.png`
-
-📸 **Screenshot:** Azure Deployment-Ausgabe  
-👉 `images/azure-success.png`
 
 ---
