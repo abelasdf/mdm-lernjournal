@@ -18,8 +18,7 @@
 
 Der verwendete Datensatz basiert auf vordefinierten Testbildern, die lokal in Klassenordnern gespeichert sind. Diese Bilder repräsentieren verschiedene emotionale Zustände (z. B. glücklich, traurig, wütend). Das Ziel ist es, eine automatische Zuordnung der Bilder zu ihrer jeweiligen Klasse über das ONNX-Modell durchzuführen.
 
-📸 **Screenshot:** Verzeichnisstruktur der Testdaten  
-👉 `images/emotion-dataset-structure.png`
+![Emotionserkennung – Upload-UI](images/Bildschirmfoto%202025-05-25%20um%2022.49.50.png)
 
 Diese Daten wurden nicht selbst annotiert, aber sorgfältig in das Projekt eingebunden und genutzt, um die ONNX-Inferenz zu evaluieren.
 
@@ -31,8 +30,7 @@ Ein vortrainiertes ONNX-Modell für die Emotionserkennung wurde verwendet. Diese
 
 Das Modell wurde **nicht selbst trainiert**, sondern diente im Rahmen dieses Projekts zur Demonstration von Inferenz und Modellintegration.
 
-📸 **Screenshot:** Modellanalyse mit Netron (optional)  
-👉 `images/netron-emotion-model.png`
+
 
 ---
 
@@ -42,11 +40,7 @@ Zur Umsetzung der Inferenz wurde ein Python-Backend mit **Flask** implementiert.
 
 Nach der Verarbeitung zeigt die Web-App die ermittelte Emotion direkt auf der Webseite an.
 
-📸 **Screenshot:** Upload-Formular im Browser  
-👉 `images/emotion-ui-upload.png`
 
-📸 **Screenshot:** Ergebnisdarstellung mit erkannter Emotion  
-👉 `images/emotion-ui-result.png`
 
 ---
 
@@ -56,3 +50,6 @@ Die Anwendung wurde lokal containerisiert und mit **Docker** ausgeführt. Die Au
 
 ```bash
 flask run --port=5051
+
+![Emotionserkennung – Ergebnisanzeige](images/Bildschirmfoto%202025-05-25%20um%2022.51.44.png)
+
