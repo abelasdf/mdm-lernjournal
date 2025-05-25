@@ -13,7 +13,11 @@
 
 ## App, Funktionalität
 
-Die Flask-App ist eine einfache Webanwendung, die es Nutzern ermöglicht, mit Python-Modellen über eine Weboberfläche zu interagieren. Sie kann zur Anzeige von Daten und zur Verarbeitung von Anfragen verwendet werden.
+## App, Funktionalität
+
+Die Flask-App ist eine einfache Webanwendung, die es Nutzern ermöglicht, mit einem Eingabefeld zu interagieren. Nach dem Drücken der Enter-Taste wird die Eingabe direkt ausgewertet und eine Antwort vom Server angezeigt.
+
+![Startseite der interaktiven App](images/interaktion-startseite.png)
 	•	Funktionalität:
 	•	Eingabeformulare für den Nutzer
 	•	Anzeige von dynamischen Daten
