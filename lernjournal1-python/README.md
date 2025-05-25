@@ -31,6 +31,8 @@ Für das Projekt wurde pip zur Verwaltung der Abhängigkeiten verwendet. Alle be
 	•	Virtuelle Umgebung: Eine virtuelle Umgebung wurde mit python -m venv venv erstellt und aktiviert. Alle Abhängigkeiten wurden in der requirements.txt-Datei dokumentiert und mit pip install -r requirements.txt installiert.
 	•	Dies gewährleistet eine saubere Installation der Abhängigkeiten und eine reproduzierbare Entwicklungsumgebung.
 
+![Dependency Management](images/Dependency%20Management.png)
+
  
 ## Deployment
 
