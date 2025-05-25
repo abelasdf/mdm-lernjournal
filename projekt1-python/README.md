@@ -68,5 +68,7 @@ Die App wurde über **Docker** containerisiert und mit **Azure App Service** ber
 - Deployment erfolgte via Azure CLI (`az webapp up`)
 - Screencast zeigt vollständig funktionierendes Deployment
 
+- ![Screenshot Analyse/Ergebnis](images/Bildschirmfoto%202025-05-25%20um%2022.35.04.png)
+
 
 ---
