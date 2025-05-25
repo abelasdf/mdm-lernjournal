@@ -13,7 +13,7 @@ Das Modell EfficientNet-Lite4 wurde über das offizielle ONNX Model Zoo Reposito
 
 Die Analyse des Modells erfolgte mit dem Tool Netron, welches ONNX-Modelle visualisiert. Nach dem Öffnen der Datei in Netron konnte die Netzwerkstruktur und die Ein- sowie Ausgabeparameter des EfficientNet-Lite4-Modells eingesehen werden. Das Modell zeigt eine klare Architektur für die Bildklassifikation mit einem Eingang von (1, 3, 224, 224) und einer Softmax-Ausgabe von 1000 Klassen.
 
-<img width="260" alt="Bildschirmfoto 2025-05-05 um 16 43 09" src="https://github.com/user-attachments/assets/b4cb48d9-c528-4edc-a6bd-2d3a37fb9db7" />
+![ONNX Schritt 1 – Modell vorbereiten](images/onnximage1.png)
 
 
 
@@ -30,5 +30,5 @@ flask run --port=5051
 Die Web-Applikation war anschliessend erfolgreich lokal erreichbar unter:
 http://127.0.0.1:5051
 
-<img width="679" alt="Bildschirmfoto 2025-05-05 um 16 44 08" src="https://github.com/user-attachments/assets/05ec279d-1022-46de-97cb-4616626773d1" />
+![ONNX Schritt 2 – Modell eingebunden](images/onnximage2.png)
 
