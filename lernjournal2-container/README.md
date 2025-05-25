@@ -54,7 +54,7 @@ flask run --port=5051
 
 Die Applikation war lokal erfolgreich unter http://127.0.0.1:5051 aufrufbar. Bilder konnten hochgeladen und analysiert werden. Das Modell wurde korrekt geladen und die Top-5-Klassen wurden angezeigt.
 
-<img width="754" alt="Bildschirmfoto 2025-05-04 um 21 02 27" src="https://github.com/user-attachments/assets/125c585e-f152-43d9-8e09-c0b61f2e3724" />
+![Docker Container Build](images/containerimage1.png)
 
 ### Dokumentation Deployment Azure Web App
 
